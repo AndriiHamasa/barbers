@@ -1,6 +1,9 @@
 // utils styles
 @import "./utils/normalize";
+@import "./utils/fonts";
 // base styles
+@import "./base/base";
 // components styles
 @import "./components/container";
 @import "./components/header";
+@import "./components/section-about";

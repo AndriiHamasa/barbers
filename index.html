@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -52,7 +58,37 @@
       <!-- section about -->
       <section class="about">
         <div class="container">
-          <p class="about__item">About</p>
+          <ul class="about__photo-list">
+            <li class="about__item">
+              <img
+                srcset="
+                  ./images/about/about_1_m_1x.jpg 330w,
+                  ./images/about/about_1_m_2x.jpg 660w,
+                  ./images/about/about_1_l_1x.jpg 270w,
+                  ./images/about/about_1_l_2x.jpg 540w
+                "
+                sizes="(min-width: 1170px) 270px, (min-width: 768px) 330px"
+                src="./images/about/about_1_m_1x.jpg"
+                alt="face of company"
+                class="about__photo"
+              />
+            </li>
+            <li class="about__item">
+              <img
+                srcset="
+                  ./images/about/about_2_m_1x.jpg 330w,
+                  ./images/about/about_2_m_2x.jpg 660w,
+                  ./images/about/about_2_l_1x.jpg 270w,
+                  ./images/about/about_2_l_2x.jpg 540w
+                "
+                sizes="(min-width: 1170px) 270px, (min-width: 768px) 330px"
+                src="./images/about/about_1_m_1x.jpg"
+                alt="face of company"
+                class="about__photo"
+              />
+            </li>
+          </ul>
+          <p class="about__sub-title">About</p>
           <h2 class="about__title">Best Barbershop in your city</h2>
           <p class="about__text-primary">
             If you want to add more confidence to your image, you should visit
@@ -71,7 +107,7 @@
       <!-- section price -->
       <section class="price">
         <div class="container">
-          <p class="price__item">Spend your time with the best masters</p>
+          <p class="price__sub-title">Spend your time with the best masters</p>
           <h2 class="price__title">Services and prices</h2>
           <ul class="price__table">
             <li class="price__element">Men’s haircut from 300 uah.</li>
@@ -81,9 +117,15 @@
           </ul>
           <ul class="price__table">
             <li class="price__element">Trainee’s haircut from 50 uah.</li>
-            <li class="price__element">Haircut under the nozzle from 200 uah.</li>
-            <li class="price__element">Children’s haircut (0-12 y.o.) from 300 uah.</li>
-            <li class="price__element">Camouflage of grey hair from 200 uah.</li>
+            <li class="price__element">
+              Haircut under the nozzle from 200 uah.
+            </li>
+            <li class="price__element">
+              Children’s haircut (0-12 y.o.) from 300 uah.
+            </li>
+            <li class="price__element">
+              Camouflage of grey hair from 200 uah.
+            </li>
           </ul>
           <button class="btn">online-booking</button>
         </div>
@@ -91,9 +133,12 @@
       <!-- section strong -->
       <section class="strong">
         <div class="container">
-          <p class="strong__item">Old traditional school</p>
+          <p class="strong__sub-title">Old traditional school</p>
           <h2 class="strong__title">¿Why people come to us?</h2>
-          <p class="strong__text">Only good things are said about us. But it's better to see and feel 1 time than read 10 times. </p>
+          <p class="strong__text">
+            Only good things are said about us. But it's better to see and feel
+            1 time than read 10 times.
+          </p>
           <ul class="strong__numerics">
             <li class="strong__items">
               <h3 class="strong__numeric">600</h3>
@@ -117,11 +162,24 @@
       <!-- section team -->
       <section class="team">
         <div class="container">
-          <p class="team__text">For true enjoyers of the atmosphere</p>
+          <p class="team__sub-title">For true enjoyers of the atmosphere</p>
           <h2 class="team__title">Our barbers</h2>
           <ul class="team__cards">
             <li class="team__card">
-              <img src="" alt="" class="team__photo">
+              <img
+                srcset="
+                  ./images/team/teammate_1_s_1x.jpg 418w,
+                  ./images/team/teammate_1_s_2x.jpg 836w,
+                  ./images/team/teammate_1_m_1x.jpg 450w,
+                  ./images/team/teammate_1_m_2x.jpg 900w,
+                  ./images/team/teammate_1_l_1x.jpg 370w,
+                  ./images/team/teammate_1_l_2x.jpg 740w
+                "
+                sizes="(min-width: 1170px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px"
+                src="./images/team/teammate_1_s_1x.jpg"
+                alt="worker"
+                class="team__photo"
+              />
               <div class="team__teammate">
                 <h3 class="team__name">John Smith</h3>
                 <p class="team__prof">Extreme Barber</p>
@@ -151,7 +209,20 @@
             </li>
 
             <li class="team__card">
-              <img src="" alt="" class="team__photo">
+              <img
+                srcset="
+                  ./images/team/teammate_2_s_1x.jpg 418w,
+                  ./images/team/teammate_2_s_2x.jpg 836w,
+                  ./images/team/teammate_2_m_1x.jpg 450w,
+                  ./images/team/teammate_2_m_2x.jpg 900w,
+                  ./images/team/teammate_2_l_1x.jpg 370w,
+                  ./images/team/teammate_2_l_2x.jpg 740w
+                "
+                sizes="(min-width: 1170px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px"
+                src="./images/team/teammate_1_s_1x.jpg"
+                alt="worker"
+                class="team__photo"
+              />
               <div class="team__teammate">
                 <h3 class="team__name">Michele Doe</h3>
                 <p class="team__prof">Extreme Barber</p>
@@ -181,7 +252,20 @@
             </li>
 
             <li class="team__card">
-              <img src="" alt="" class="team__photo">
+              <img
+                srcset="
+                  ./images/team/teammate_3_s_1x.jpg 418w,
+                  ./images/team/teammate_3_s_2x.jpg 836w,
+                  ./images/team/teammate_3_m_1x.jpg 450w,
+                  ./images/team/teammate_3_m_2x.jpg 900w,
+                  ./images/team/teammate_3_l_1x.jpg 370w,
+                  ./images/team/teammate_3_l_2x.jpg 740w
+                "
+                sizes="(min-width: 1170px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px"
+                src="./images/team/teammate_1_s_1x.jpg"
+                alt="worker"
+                class="team__photo"
+              />
               <div class="team__teammate">
                 <h3 class="team__name">Alan Black</h3>
                 <p class="team__prof">Extreme Barber</p>
@@ -215,12 +299,75 @@
       <!-- section works -->
       <section class="work">
         <div class="container">
-          <p class="work__text">In Latin, "barba" means "beard"</p>
+          <p class="work__sub-title">In Latin, "barba" means "beard"</p>
           <ul class="work__list">
-            <li class="work__item"><img src="" alt="" class="work__photo"></li>
-            <li class="work__item"><img src="" alt="" class="work__photo"></li>
-            <li class="work__item"><img src="" alt="" class="work__photo"></li>
-            <li class="work__item"><img src="" alt="" class="work__photo"></li>
+            <li class="work__item">
+              <img
+                srcset="
+                  ./images/works/work_1_s_1x.jpg 418w,
+                  ./images/works/work_1_s_2x.jpg 836w,
+                  ./images/works/work_1_m_1x.jpg 330w,
+                  ./images/works/work_1_m_2x.jpg 660w,
+                  ./images/works/work_1_l_1x.jpg 270w,
+                  ./images/works/work_1_l_2x.jpg 540w
+                "
+                sizes="(min-width: 1170px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px"
+                src="./images/works/work_1_s_1x.jpg"
+                alt="work process"
+                class="work__photo"
+              />
+            </li>
+
+            <li class="work__item">
+              <img
+                srcset="
+                  ./images/works/work_2_s_1x.jpg 418w,
+                  ./images/works/work_2_s_2x.jpg 836w,
+                  ./images/works/work_2_m_1x.jpg 330w,
+                  ./images/works/work_2_m_2x.jpg 660w,
+                  ./images/works/work_2_l_1x.jpg 270w,
+                  ./images/works/work_2_l_2x.jpg 540w
+                "
+                sizes="(min-width: 1170px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px"
+                src="./images/works/work_1_s_1x.jpg"
+                alt="work process"
+                class="work__photo"
+              />
+            </li>
+
+            <li class="work__item">
+              <img
+                srcset="
+                  ./images/works/work_3_s_1x.jpg 418w,
+                  ./images/works/work_3_s_2x.jpg 836w,
+                  ./images/works/work_3_m_1x.jpg 330w,
+                  ./images/works/work_3_m_2x.jpg 660w,
+                  ./images/works/work_3_l_1x.jpg 270w,
+                  ./images/works/work_3_l_2x.jpg 540w
+                "
+                sizes="(min-width: 1170px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px"
+                src="./images/works/work_1_s_1x.jpg"
+                alt="work process"
+                class="work__photo"
+              />
+            </li>
+
+            <li class="work__item">
+              <img
+                srcset="
+                  ./images/works/work_4_s_1x.jpg 418w,
+                  ./images/works/work_4_s_2x.jpg 836w,
+                  ./images/works/work_4_m_1x.jpg 330w,
+                  ./images/works/work_4_m_2x.jpg 660w,
+                  ./images/works/work_4_l_1x.jpg 270w,
+                  ./images/works/work_4_l_2x.jpg 540w
+                "
+                sizes="(min-width: 1170px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px"
+                src="./images/works/work_1_s_1x.jpg"
+                alt="work process"
+                class="work__photo"
+              />
+            </li>
           </ul>
         </div>
       </section>
@@ -230,7 +377,6 @@
       <div class="container">
         <h2 class="title">Online-booking</h2>
         <!-- <form action=""></form> -->
-        
       </div>
     </footer>
 
