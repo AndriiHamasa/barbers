@@ -1,0 +1,17 @@
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.about__photo-list,
+.price__table,
+.strong__numerics,
+.team__cards,
+.team__socials,
+.work__list{
+    list-style: none;
+}

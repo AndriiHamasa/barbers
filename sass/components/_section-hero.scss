@@ -1,0 +1,34 @@
+.hero {
+  background-color: #555e7c;
+}
+
+.hero__sub-title {
+  font-size: 11px;
+  line-height: 1.36;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero__title {
+  font-size: 48px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  margin-bottom: 20px;
+
+  color: var(--white-color);
+}
+
+.hero__text {
+  font-size: 16px;
+  line-height: 1.62;
+
+  letter-spacing: 0.02em;
+
+  color: #9da4bd;
+}

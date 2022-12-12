@@ -1,3 +1,31 @@
-body{
-    font-family: Open Sans;
+body {
+  font-family: Open Sans, sans-serif;
+}
+
+h1,h2 {
+  font-family: Raleway;
+}
+
+.hero__sub-title,
+.about__sub-title,
+.price__sub-title,
+.strong__sub-title,
+.team__sub-title {
+  font-weight: 600;
+}
+
+.btn {
+  font-family: Open Sans, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.33;
+  text-transform: uppercase;
+
+  color: var(--primary-title-color);
+  background-color: transparent;
+
+  padding: 12px 20px;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
 }
