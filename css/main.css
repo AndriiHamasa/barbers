@@ -575,20 +575,6 @@ h1, h2 {
   font-weight: 600;
 }
 
-.btn {
-  font-family: Open Sans, sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 1.33;
-  text-transform: uppercase;
-  color: var(--primary-title-color);
-  background-color: transparent;
-  padding: 12px 20px;
-  border: 1px solid var(--accent-color);
-  border-radius: 25px;
-}
-
 h1,
 h2,
 h3,
@@ -617,6 +603,26 @@ ul {
   }
 }
 
+.btn {
+  font-family: Open Sans, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.33;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+  background-color: transparent;
+  padding: 12px 20px;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn:hover, .btn:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -624,7 +630,24 @@ ul {
 }
 
 .hero {
-  background-color: #555e7c;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1070px;
+  padding-top: 209px;
+  padding-bottom: 209px;
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../images/hero/hero_1_s_x1.jpg);
+    background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/hero_1_s_x1.jpg);
+  }
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../images/hero/hero_1_s_x2.jpg);
+    background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/hero_1_s_x2.jpg);
+  }
 }
 
 .hero__sub-title {
