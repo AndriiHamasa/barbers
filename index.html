@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <header>
+    <header class="main-nav">
       <div class="container header-container">
         <a href="./index.html" class="logo">
           <svg class="logo__icon" width="69" height="56">
@@ -26,18 +26,8 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
+          <svg class="menu__icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-menu-burger"></use>
           </svg>
         </button>
       </div>
@@ -400,7 +390,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="basement">
       <div class="container">
         <h2 class="title">Online-booking</h2>
         <!-- <form action=""></form> -->
