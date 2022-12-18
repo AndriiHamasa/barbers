@@ -21,6 +21,33 @@
             <use href="./images/sprite.svg#icon-logo"></use>
           </svg>
         </a>
+        <div class="menu-desktop">
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="">About</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="">Services and prices</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="">Barbers</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="contacts-header">
+            <a class="header__contact" href="tel:+380441111111"
+              >+38 044 111 11 11</a
+            >
+            <button class="btn btn-dark-theme" type="button">
+              Online-booking
+            </button>
+          </div>
+        </div>
+
         <button
           class="menu-toggle js-open-menu"
           aria-expanded="false"
@@ -119,7 +146,7 @@
               </li>
             </ul>
           </div>
-          
+
           <button class="btn btn-dark-theme">online-booking</button>
         </div>
       </section>
@@ -394,6 +421,45 @@
       <div class="container">
         <h2 class="title">Online-booking</h2>
         <!-- <form action=""></form> -->
+        <div class="form-footer">
+          <form class="form-footer__shell">
+            <label class="form-footer__label">
+              Name
+              <input
+                class="name-ftr-name"
+                type="text"
+                name="footer-form-name"
+              />
+            </label>
+            <label class="form-footer__label">
+              Phone
+              <input
+                class="name-ftr-phone"
+                type="text"
+                name="footer-form-phone"
+              />
+            </label>
+            <label class="form-footer__label">
+              Message
+              <input
+                class="name-ftr-message"
+                type="text"
+                name="footer-form-message"
+              />
+            </label>
+            <button class="btn btn-dark-theme" type="submit">send</button>
+          </form>
+        </div>
+        <div class="contacts-footer">
+          <h2 class="title">Contacts</h2>
+          <address>
+            <p class="adress-map">st. Vasilkivska, 7A Kyiv, 08132</p>
+            <ul class="adress-list">
+              <li class="adress-item"><a class="adress-link" href=""></a></li>
+              <li class="adress-item"><a class="adress-link" href=""></a></li>
+            </ul>
+          </address>
+        </div>
       </div>
     </footer>
 
